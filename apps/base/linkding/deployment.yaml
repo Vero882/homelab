@@ -12,6 +12,8 @@ spec:
       labels:
         app: linkding
     spec:
+      securityContext:
+        runAsUser: 33
       containers:
         - name: linkding
           image: sissbruecker/linkding:1.39.1
