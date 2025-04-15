@@ -3,6 +3,6 @@ kind: Kustomization
 namespace: linkding
 resources:
   - namespace.yaml
-    #  - storage.yaml
-    #  - deployment.yaml
-    #  - service.yaml
+  - storage.yaml
+  - deployment.yaml
+  - service.yaml
