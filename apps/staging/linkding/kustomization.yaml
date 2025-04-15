@@ -3,7 +3,7 @@ kind: Kustomization
 namespace: linkding
 resources:
   - ../../base/linkding/
-  - linkding-continainer-env-secret.yaml
+  - linkding-container-env-secret.yaml
   - cloudflare-secret.yaml
   - cloudflare.yaml
   - test-secret.yaml
