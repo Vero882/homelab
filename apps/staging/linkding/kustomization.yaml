@@ -6,4 +6,3 @@ resources:
   - linkding-container-env-secret.yaml
   - cloudflare-secret.yaml
   - cloudflare.yaml
-  - test-secret.yaml
