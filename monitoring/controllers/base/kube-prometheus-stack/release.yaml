@@ -31,3 +31,9 @@ spec:
   values:
     grafana:
       adminPassword: testpass
+      ingress:
+        enabled: true
+        ingressClassName: traefik
+        hosts:
+          - grafana.kubeklepsch.com
+        path: /
