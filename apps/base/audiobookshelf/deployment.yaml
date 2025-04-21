@@ -1,23 +1,23 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: audiobookshelf
+  name: abshelf
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: audiobookshelf
+      app: abshelf
   template:
     metadata:
       labels:
-        app: audiobookshelf
+        app: abshelf
     # spec:
     #   securityContext:
     #     runAsUser: 33
     #     runAsGroup: 33
     #     fsGroup: 33
       containers:
-        - name: audiobookshelf
+        - name: abshelf
           image: ghcr.io/advplyr/audiobookshelf:2.20.0
           ports:
             - containerPort: 3005
