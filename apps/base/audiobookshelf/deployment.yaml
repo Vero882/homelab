@@ -1,35 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: abshelf
+  name: audiobookshelf
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: abshelf
+      app: audiobookshelf
   template:
     metadata:
       labels:
-        app: abshelf
-    # spec:
-    #   securityContext:
-    #     runAsUser: 33
-    #     runAsGroup: 33
-    #     fsGroup: 33
+        app: audiobookshelf
+    spec:
       containers:
-        - name: abshelf
+        - name: audiobookshelf
           image: ghcr.io/advplyr/audiobookshelf:2.20.0
           ports:
             - containerPort: 3005
-      #     securityContext:
-      #       allowPrivilegeEscalation: false
-      #     envFrom:
-      #     - secretRef:
-      #         name: linkding-container-env
-      #     volumeMounts:
-      #       - name: linkding-data-pvc
-      #         mountPath: /etc/linkding/data
-      # volumes:
-      #   - name: linkding-data-pvc
-      #     persistentVolumeClaim:
-      #       claimName: linkding-data-pvc
