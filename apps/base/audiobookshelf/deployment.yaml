@@ -21,4 +21,11 @@ spec:
           envFrom:
             - configMapRef:
                 name: audiobookshelf-configmap
+          volumeMounts:
+            - name: audiobookshelf-config
+              mountPath: /config
+            - name: audiobookshelf-audiobooks
+              mountPath: /audiobooks
+            - name: audiobookshelf-metadata
+              mountPath: /metadata
       restartPolicy: Always

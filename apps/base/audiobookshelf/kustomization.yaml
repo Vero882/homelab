@@ -4,7 +4,8 @@ namespace: audiobookshelf
 resources:
   - namespace.yaml
   - configmap.yaml
+  - storage.yaml
   - deployment.yaml
   - service.yaml
-  # - storage.yaml
+  
   
