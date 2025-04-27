@@ -1,0 +1,71 @@
+# Homelab
+This repository documents the setup and configuration of a personal Kubernetes cluster running within a Proxmox Virtual Environment (VE). 
+
+## Kubernetes Cluster Information
+Cluster Details:
+
+* **Kubernetes Distribution:** k3s
+* **Version:** v1.32.3+k3s1
+* **Nodes:**
+    * **Control Plane Nodes:** 1x VM (3x planned), running Ubuntu Server. These nodes host the Kubernetes control plane components (API server, etcd, scheduler, controller manager).
+    * **Worker Nodes:** 0x VMs (2x planned), running Ubuntu Server. These nodes run the containerized applications.
+* **Container Runtime:** containerd
+* **GitOps:** Flux CD
+
+## Hardware
+The homelab is built on the following hardware:
+
+* **san (Primary):** Minisforum MS-A1
+    * CPU: AMD Ryzen 7 8700G
+    * RAM: 96GB (2x 48GB) Crucial DDR5 5600MHz
+
+* **spike (Secondary):** Custom Build
+    * CPU: Intel i7-4790K
+    * RAM: 32GB (2x 16GB) 
+
+* **jet (Cold Backup):** Dell PowerEdge R630
+    * CPU: x2 Intel Xeon E5-2683 v4
+    * RAM: 672GB (21x 32GB) DDR3 2133MHz 
+
+* **Synology NAS:** DS920+
+    * CPU: Intel Celeron J4125
+    * RAM: 4GB
+    * Storage:
+        * 32TB (4x 8TB HDD) (SHR; 1 drive tolerance)
+
+* **Proxmox Server:**
+    * Proxmox VE 8.3.2
+
+## Applications Deployed
+Here are some of the applications currently running on the homelab:
+*Note: Not all services have yet been migrated into Kubernetes and are still running on Ubuntu Docker hosts*
+
+### Kubernetes
+#### Apps
+| App | Description |
+|-----|-------------|
+| <img src=https://repocloud.io/static/apps/linkding/assets/logo.png height=25 length=25> Linkding | Local bookmarks manager |
+| <img src=https://www.cloudron.io/store/icons/tech.ittools.cloudron.png height=25 length=25> IT-Tools | Handy self-hosted dev tools |
+
+#### Monitoring
+| App | Description |
+|-----|-------------|
+| <img src=https://w7.pngwing.com/pngs/434/923/png-transparent-grafana-hd-logo-thumbnail.png height=25 length=25> Prometheus & Grafana stack | Cluster-wide monitoring |
+
+### Docker Hosts
+| App | Description |
+|-----|-------------|
+| <img src=https://apps.heimdall.site/img/heimdall-icon-small.png height=25 length=25> Heimdall | Home dashboard |
+| <img src=https://static-00.iconduck.com/assets.00/pihole-icon-1393x2048-dld9kbl1.png height=25 length=25> PiHole | Network-wide ad blocking and DNS. |
+| <img src=https://static-00.iconduck.com/assets.00/uptime-kuma-icon-1024x940-gabwl61r.png height=25 length=25> Uptime Kuma | Homelab monitoring |
+| <img src=https://static-00.iconduck.com/assets.00/audiobookshelf-icon-1024x1024-4zp2p41e.png height=25 length=25> Audiobookshelf | Self-hosted Audiobook manager |
+| <img src=https://static-00.iconduck.com/assets.00/portainer-icon-732x1024-dlqoqekr.png height=25 length=25> Portainer | Docker host container management |
+| <img src=https://play-lh.googleusercontent.com/GBhNhKgjfy6i6Ucc0hyB-79WmcV7LvKSfGSy8iStFdZSaLioKQp5rPWjqsh2YFRRZsE1 height=25 length=25> Twingate | Zero-trust remote network access |
+| ... | Various additional serviecs |
+
+## Future Improvements
+* **Migration of apps & services:** Migrate additional services off of normal Docker hosts into Kubernetes.
+* **Dashboard migration:** Migrate from [Heimdall](https://heimdall.site/) to [Homepage](https://gethomepage.dev/).
+* **Kubernetes Distro:** Migrate from [k3s](https://k3s.io/) to [Talos Linux](https://www.talos.dev/) for a full, cloud-native-like secured cluster.
+* **External Secrets:** Switch to externally managed secrets with Azure Key Vault.
+* **Infrastructure as Code:** Start managing as many items as possible with Terraform or Pulumi instead of traditional methods. 
