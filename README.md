@@ -64,7 +64,7 @@ Here are some of the applications currently running on the homelab:
 | ... | Various additional serviecs |
 
 ## Future Improvements
-* **Implement remote storage:** Implement remote storage using [Synology CSI](https://github.com/SynologyOpenSource/synology-csi) so pods are not tied to specific nodes.
+* **Implement remote storage:** Implement remote storage using [Synology CSI](https://github.com/SynologyOpenSource/synology-csi)/[Synology CSI Talos](https://github.com/zebernst/synology-csi-talos) so pods are not tied to local volumes on nodes. [Talos Doc](https://www.talos.dev/v1.9/kubernetes-guides/configuration/synology-csi/)
 * **Migration of apps & services:** Migrate additional services off of normal Docker hosts into Kubernetes.
 * **Dashboard migration:** Migrate from [Heimdall](https://heimdall.site/) to [Homepage](https://gethomepage.dev/).
 * **Kubernetes Distro:** Migrate from [k3s](https://k3s.io/) to [Talos Linux](https://www.talos.dev/) for a full, cloud-native-like secured cluster.
