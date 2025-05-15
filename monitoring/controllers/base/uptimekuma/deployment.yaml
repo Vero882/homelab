@@ -12,14 +12,18 @@ spec:
       labels:
         app: uptimekuma
     spec:
+      securityContext:
+        runAsUser: 1000
+        runAsGroup: 1000
+        fsGroup: 1000
       containers:
         - name: uptimekuma
           image: louislam/uptime-kuma:1.23.16
           ports:
             - containerPort: 3001
               # protocol: TCP
-          # securityContext:
-          #   allowPrivilegeEscalation: false
+          securityContext:
+            allowPrivilegeEscalation: false
           volumeMounts:
             - name: uptimekuma-data-pvc
               mountPath: /app/data
