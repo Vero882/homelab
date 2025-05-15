@@ -51,13 +51,14 @@ Here are some of the applications currently running on the homelab:
 | App | Description |
 |-----|-------------|
 | <img src=https://w7.pngwing.com/pngs/434/923/png-transparent-grafana-hd-logo-thumbnail.png height=25 length=25> Prometheus & Grafana stack | Cluster-wide monitoring |
+| <img src=https://static-00.iconduck.com/assets.00/uptime-kuma-icon-1024x940-gabwl61r.png height=25 length=25> Uptime Kuma | Homelab monitoring |
 
 ### Docker Hosts
 | App | Description |
 |-----|-------------|
 | <img src=https://apps.heimdall.site/img/heimdall-icon-small.png height=25 length=25> Heimdall | Home dashboard |
 | <img src=https://static-00.iconduck.com/assets.00/pihole-icon-1393x2048-dld9kbl1.png height=25 length=25> PiHole | Network-wide ad blocking and DNS. |
-| <img src=https://static-00.iconduck.com/assets.00/uptime-kuma-icon-1024x940-gabwl61r.png height=25 length=25> Uptime Kuma | Homelab monitoring |
+
 | <img src=https://static-00.iconduck.com/assets.00/audiobookshelf-icon-1024x1024-4zp2p41e.png height=25 length=25> Audiobookshelf | Self-hosted Audiobook manager |
 | <img src=https://static-00.iconduck.com/assets.00/portainer-icon-732x1024-dlqoqekr.png height=25 length=25> Portainer | Docker host container management |
 | <img src=https://play-lh.googleusercontent.com/GBhNhKgjfy6i6Ucc0hyB-79WmcV7LvKSfGSy8iStFdZSaLioKQp5rPWjqsh2YFRRZsE1 height=25 length=25> Twingate | Zero-trust remote network access |
