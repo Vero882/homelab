@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: uptimekuma
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: uptimekuma
+  template:
+    metadata:
+      labels:
+        app: uptimekuma
+    spec:
+      containers:
+        - name: uptimekuma
+          image: ghcr.io/louislam/uptime-kuma:1.23.16
+          ports:
+            - containerPort: 3001
+              # protocol: TCP
+          # securityContext:
+          #   allowPrivilegeEscalation: false
+          volumeMounts:
+            - name: uptimekuma-data-pvc
+              mountPath: /app/data
+      volumes:
+        - name: uptimekuma-data-pvc
+          persistentVolumeClaim:
+            claimName: uptimekuma-data-pvc
+      restartPolicy: Always
