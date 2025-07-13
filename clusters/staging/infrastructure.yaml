@@ -6,7 +6,7 @@ metadata:
 spec:
   interval: 10m0s
   # dependsOn:
-  #   - name: infra-configs
+  #   - name: infrastructure-configs
   retryInterval: 1m
   timeout: 5m
   sourceRef:
@@ -18,3 +18,20 @@ spec:
     provider: sops
     secretRef:
       name: sops-age
+---
+apiVersion: kustomize.toolkit.fluxcd.io/v1
+kind: Kustomization
+metadata:
+  name: infrastructure-configs
+  namespace: flux-system
+spec:
+  dependsOn:
+    - name: infrastructure-controllers
+  interval: 1h
+  retryInterval: 1m
+  timeout: 5m
+  sourceRef:
+    kind: GitRepository
+    name: flux-system
+  path: ./infrastructure/configs/jotunheim
+  prune: true
