@@ -19,5 +19,6 @@ spec:
   values:
     installCRDs: false
     tag: v0.18.2
+
   install:
     createNamespace: true
