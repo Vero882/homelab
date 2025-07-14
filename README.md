@@ -50,8 +50,8 @@ Here are some of the applications currently running on the homelab:
 #### Monitoring
 | App | Description |
 |-----|-------------|
-| <img src=https://w7.pngwing.com/pngs/434/923/png-transparent-grafana-hd-logo-thumbnail.png height=25 length=25> Prometheus & Grafana stack | Cluster-wide monitoring |
-| <img src=https://static-00.iconduck.com/assets.00/uptime-kuma-icon-1024x940-gabwl61r.png height=25 length=25> Uptime Kuma | Homelab monitoring |
+| <img src=https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/grafana.png height=25 length=25> Prometheus & Grafana stack | Cluster-wide monitoring |
+| <img src=https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/uptime-kuma.png height=25 length=25> Uptime Kuma | Homelab monitoring |
 
 ### Docker Hosts
 | App | Description |
