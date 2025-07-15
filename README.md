@@ -44,14 +44,20 @@ Here are some of the applications currently running on the homelab:
 #### Apps
 | App | Description |
 |-----|-------------|
-| <img src=https://repocloud.io/static/apps/linkding/assets/logo.png height=25 length=25> Linkding | Local bookmarks manager |
-| <img src=https://www.cloudron.io/store/icons/tech.ittools.cloudron.png height=25 length=25> IT-Tools | Handy self-hosted dev tools |
+| <img src=https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/linkding.png height=25 length=25> Linkding | Local bookmarks manager |
+| <img src=https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/it-tools-light.png height=25 length=25> IT-Tools | Handy self-hosted dev tools |
 
 #### Monitoring
 | App | Description |
 |-----|-------------|
 | <img src=https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/grafana.png height=25 length=25> Prometheus & Grafana stack | Cluster-wide monitoring |
 | <img src=https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/uptime-kuma.png height=25 length=25> Uptime Kuma | Homelab monitoring |
+
+
+#### Infrastructure
+| App | Description |
+|-----|-------------|
+| <img src=https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/microsoft-azure.png height=25 length=25> External Secrets Operator | Syncing external secrets from Azure KeyVault to Kubernetes |
 
 ### Docker Hosts
 | App | Description |
