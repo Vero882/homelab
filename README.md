@@ -74,5 +74,4 @@ Here are some of the applications currently running on the homelab:
 * **Migration of apps & services:** Migrate additional services off of normal Docker hosts into Kubernetes.
 * **Dashboard migration:** Migrate from [Heimdall](https://heimdall.site/) to [Homepage](https://gethomepage.dev/).
 * **Kubernetes Distro:** Migrate from [k3s](https://k3s.io/) to [Talos Linux](https://www.talos.dev/) for a full, cloud-native-like secured cluster.
-* **External Secrets:** Switch to externally managed secrets with Azure Key Vault.
 * **Infrastructure as Code:** Start managing as many items as possible with Terraform or Pulumi instead of traditional methods. 
