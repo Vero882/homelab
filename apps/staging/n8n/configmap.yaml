@@ -5,8 +5,10 @@ metadata:
 data:
   N8N_PORT: "5678"
   N8N_PROTOCOL: "http"
+  GENERIC_TIMEZONE: "America/Denver"
+  TZ: "America/Denver"
     #  DB_TYPE: "postgresdb"
     #  DB_POSTGRESDB_HOST: "n8n-db.kubeklepsch.com"
     #  DB_POSTGRESDB_PORT: "5432"
     #  DB_POSTGRESDB_DATABASE: "n8n"
-  N8N_SECURE_COOKIE: "false"
+  N8N_SECURE_COOKIE: "true"
