@@ -2,3 +2,5 @@
 kubectl = "latest"
 k9s = "latest"
 flux2 = "latest"
+kubectx = "latest"
+kubens = "latest"
