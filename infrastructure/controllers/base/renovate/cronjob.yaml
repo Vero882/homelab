@@ -15,6 +15,7 @@ spec:
               image: renovate/renovate:latest
               args:
                 - Vero882/homelab
+              imagePullPolicy: Always
 
               envFrom:
                 - secretRef:
