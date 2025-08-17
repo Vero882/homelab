@@ -12,7 +12,7 @@ spec:
         spec:
           containers:
             - name: renovate
-              image: renovate/renovate:latest
+              image: renovate/renovate@sha256:5b6a921771bfc42cc7caf175708a17236097e8ea1512753fcbaca92af10310ab
               args:
                 - Vero882/homelab
 
@@ -23,4 +23,3 @@ spec:
                     name: renovate-configmap
 
           restartPolicy: Never
-
