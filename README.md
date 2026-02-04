@@ -41,8 +41,9 @@ Here are some of the applications currently running on the homelab:
 |-----|-------------|
 | <img src=https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/audiobookshelf.png height=25 length=25> Audiobookshelf | Self-hosted Audiobook manager |
 | <img src=https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/linkding.png height=25 length=25> Linkding | Local bookmarks manager |
-| <img src=https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/it-tools-light.png height=25 length=25> IT-Tools | Handy self-hosted dev tools |
 | <img src=https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/n8n.png height=25 length=25> n8n | Self-hosted automation platform |
+  <img src=https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/renovate.png height=25 length=25> Renovate | Automated dependency updates |
+| <img src=https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/it-tools-light.png height=25 length=25> IT-Tools | Handy self-hosted dev tools |
 
 #### Monitoring
 | App | Description |
