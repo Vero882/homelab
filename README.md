@@ -13,15 +13,19 @@ This repository documents the setup and configuration of a personal Kubernetes s
 The homelab is built on the following hardware:
 
 ### Compute
-* **san (Primary):** Minisforum MS-A1
+* **san:** Minisforum MS-A1
     * CPU: AMD Ryzen 7 8700G
     * RAM: 96GB (2x 48GB) Crucial DDR5 5600MHz
 
-* **spike (Secondary):** Custom Build
+* **spike:** Custom Build
     * CPU: Intel i7-4790K
     * RAM: 32GB (2x 16GB) 
 
-* **jet (Cold Backup):** Dell PowerEdge R630
+* **faye (QDevice):** Dell Optiplex
+    * CPU: Intel i5-4590S
+    * RAM: 8GB
+
+* **jet (Cold Backup/Retired):** Dell PowerEdge R630
     * CPU: x2 Intel Xeon E5-2683 v4
     * RAM: 672GB (21x 32GB) DDR3 2133MHz 
 
