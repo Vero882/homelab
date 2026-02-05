@@ -1,5 +1,5 @@
-# Homelab
-This repository documents the setup and configuration of a personal Kubernetes staging cluster running within a <img src=https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/proxmox.png height=25 length=25> Proxmox Virtual Environment (VE). 
+# Homelab <img src=https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/proxmox.png height=25 length=25> <img src=https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/kubernetes.png height=25 length=25>
+This repository documents the setup and configuration of a personal Kubernetes staging cluster running within a Proxmox Virtual Environment (VE). 
 
 ## Kubernetes Cluster Information
 
