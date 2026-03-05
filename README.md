@@ -68,6 +68,7 @@ Here are some of the applications currently running on the homelab:
 | <img src=https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/pi-hole.png height=25 length=25> PiHole | Network-wide ad blocking and local DNS. |
 | <img src=https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/portainer.png height=25 length=25> Portainer | Docker host container management |
 | <img src=https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/twingate-light.png height=25 length=25> Twingate | Zero-trust remote network access |
+| <img src=https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/onedev-light.png height=25 length=25> OneDev | Git, CICD, etc DevOps Platform |
 
 ## Future Improvements
 * **Implement remote storage:** Implement remote storage using [Synology CSI](https://github.com/SynologyOpenSource/synology-csi)/[Synology CSI Talos](https://github.com/zebernst/synology-csi-talos) so pods are not tied to local volumes on nodes. [Talos Doc](https://www.talos.dev/v1.9/kubernetes-guides/configuration/synology-csi/)
