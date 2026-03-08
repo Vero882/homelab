@@ -71,7 +71,7 @@ Here are some of the applications currently running on the homelab:
 | <img src=https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/onedev-light.png height=25 length=25> OneDev | Git, CICD, etc DevOps Platform |
 
 ## Future Improvements
-* **Dashboard migration:** Migrate from [Heimdall](https://heimdall.site/) to [Homepage](https://gethomepage.dev/).
-* **Kubernetes Distro:** Deploy baremetal production cluster with [Talos Linux](https://www.talos.dev/) for a full, cloud-native-like secured cluster. (Pending hardware purchase)
-* **Infrastructure as Code:** Start managing as many items as possible with Terraform or Pulumi instead of traditional methods. 
+* [ ] **Dashboard migration:** Migrate from [Heimdall](https://heimdall.site/) to [Homepage](https://gethomepage.dev/).
+* [ ] **Kubernetes Distro:** Deploy baremetal production cluster with [Talos Linux](https://www.talos.dev/) for a full, cloud-native-like secured cluster. (Pending hardware purchase)
+* [ ] **Infrastructure as Code:** Start managing as many items as possible with Terraform or Pulumi instead of traditional methods. 
 * [x] **Implement remote storage:** Implement remote storage using [Synology CSI](https://github.com/SynologyOpenSource/synology-csi)/[Synology CSI Talos](https://github.com/zebernst/synology-csi-talos) so pods are not tied to local volumes on nodes. [Talos Doc](https://www.talos.dev/v1.9/kubernetes-guides/configuration/synology-csi/)
