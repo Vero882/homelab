@@ -60,6 +60,7 @@ Here are some of the applications currently running on the homelab:
 | App | Description |
 |-----|-------------|
 | <img src=https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/microsoft-azure.png height=25 length=25> External Secrets Operator | Syncing external secrets from Azure KeyVault to Kubernetes |
+| <img src=https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/synology.png height=25 length=25> Synology CSI | Container Storage Interface driver for Synology |
 
 ### Docker Hosts
 | App | Description |
