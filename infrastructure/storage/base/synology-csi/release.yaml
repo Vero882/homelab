@@ -5,6 +5,9 @@ metadata:
   namespace: synology-csi
 spec:
   interval: 30m
+  targetNamespace: synology-csi
+  install:
+    createNamespace: true
   chart:
     spec:
       chart: synology-csi
