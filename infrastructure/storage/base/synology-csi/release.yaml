@@ -16,4 +16,6 @@ spec:
       interval: 12h
 
   values:
-    existingSecret: synology-csi-secret
+    clientInfoSecret:
+      name: synology-csi-secret
+      create: false
