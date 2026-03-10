@@ -6,7 +6,7 @@ metadata:
   name: synology-iscsi
 provisioner: csi.san.synology.com
 parameters:
-  fsType: "ext4"
+  fsType: "iscsi"
   location: "/volume1/k3s-stg"
   formatOptions: "--nodiscard"
 reclaimPolicy: Delete
