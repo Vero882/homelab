@@ -30,6 +30,7 @@ spec:
           fsType: "ext4"
           location: "/k3s-stg"
           formatOptions: "--nodiscard"
+          protocol: iscsi
         reclaimPolicy: Delete
       iscsi-retain:
         disabled: false
