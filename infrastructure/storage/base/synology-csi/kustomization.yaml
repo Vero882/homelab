@@ -4,4 +4,4 @@ resources:
   - namespace.yaml
   #  - synology-csi-storageclass.yaml
   - repository.yaml
-  #- release.yaml
+  - release.yaml
