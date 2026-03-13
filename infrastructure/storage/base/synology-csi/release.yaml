@@ -27,7 +27,7 @@ spec:
         isDefault: true
         parameters:
           dsm: 192.168.1.81
-          fsType: ext4
+          fsType: btrfs
           location: /k3s-stg
           formatOptions: --nodiscard
           protocol: iscsi
