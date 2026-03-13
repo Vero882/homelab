@@ -27,7 +27,7 @@ spec:
         isDefault: true
         parameters:
           fsType: "ext4"
-          location: "/volume1/k3s-stg"
+          location: "/k3s-stg"
           formatOptions: "--nodiscard"
         reclaimPolicy: Delete
       iscsi-retain:
