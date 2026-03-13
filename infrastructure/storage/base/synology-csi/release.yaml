@@ -27,9 +27,9 @@ spec:
         isDefault: true
         parameters:
           dsm: 192.168.1.81
-          fsType: "ext4"
-          location: "/k3s-stg"
-          formatOptions: "--nodiscard"
+          fsType: ext4
+          location: /k3s-stg
+          formatOptions: --nodiscard
           protocol: iscsi
         reclaimPolicy: Delete
       iscsi-retain:
