@@ -19,3 +19,25 @@ spec:
     clientInfoSecret:
       name: synology-csi-secret
       create: false
+    node:
+      kubeletPath: /var/lib/rancher/agent/kubelet
+    storageClasses:
+      iscsi-delete:
+        disabled: false
+        isDefault: true
+        parameters:
+          fsType: "ext4"
+          location: "/volume1/k3s-stg"
+          formatOptions: "--nodiscard"
+        reclaimPolicy: Delete
+      iscsi-retain:
+        disabled: false
+        reclaimPolicy: Retain
+      nfs-delete:
+        disabled: true
+      nfs-retain:
+        disabled: true
+      smb-delete:
+        disabled: true
+      smb-retain:
+        disabled: true
