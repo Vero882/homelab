@@ -1,0 +1,89 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: audiobookshelf-restore
+  namespace: audiobookshelf
+  labels:
+    app: audiobookshelf-restore
+spec:
+  containers:
+    - name: restore
+      image: alpine
+      command: ["/bin/sh", "-c", "sleep 3600"]
+      volumeMounts:
+        - name: audiobookshelf-config
+          mountPath: /config
+        - name: audiobookshelf-audiobooks
+          mountPath: /audiobooks
+        - name: audiobookshelf-metadata
+          mountPath: /metadata
+  volumes:
+    - name: audiobookshelf-config
+      persistentVolumeClaim:
+        claimName: audiobookshelf-config
+    - name: audiobookshelf-audiobooks
+      persistentVolumeClaim:
+        claimName: audiobookshelf-audiobooks
+    - name: audiobookshelf-metadata
+      persistentVolumeClaim:
+        claimName: audiobookshelf-metadata
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: linkding-restore
+  namespace: linkding
+  labels:
+    app: linkding-restore
+spec:
+  containers:
+    - name: restore
+      image: alpine
+      command: ["/bin/sh", "-c", "sleep 3600"]
+      volumeMounts:
+        - name: linkding-data-pvc
+          mountPath: /etc/linkding/data
+  volumes:
+    - name: linkding-data-pvc
+      persistentVolumeClaim:
+        claimName: linkding-data-pvc
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: n8n-restore
+  namespace: n8n
+  labels:
+    app: n8n-restore
+spec:
+  containers:
+    - name: restore
+      image: alpine
+      command: ["/bin/sh", "-c", "sleep 3600"]
+      volumeMounts:
+        - name: n8n-data
+          mountPath: /home/node/.n8n
+  volumes:
+    - name: n8n-data
+      persistentVolumeClaim:
+        claimName: n8n-data
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: uptimekuma-restore
+  namespace: uptimekuma
+  labels:
+    app: uptimekuma-restore
+spec:
+  containers:
+    - name: restore
+      image: alpine
+      command: ["/bin/sh", "-c", "sleep 3600"]
+      volumeMounts:
+        - name: uptimekuma-data-pvc
+          mountPath: /app/data
+  volumes:
+    - name: uptimekuma-data-pvc
+      persistentVolumeClaim:
+        claimName: uptimekuma-data-pvc
