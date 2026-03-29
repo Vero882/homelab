@@ -20,7 +20,7 @@ spec:
       name: synology-csi-secret
       create: false
     node:
-      kubeletPath: /var/lib/rancher/agent/kubelet
+      kubeletPath: /var/lib/rancher/k3s/agent/kubelet
     storageClasses:
       iscsi-delete:
         disabled: false
