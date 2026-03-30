@@ -5,7 +5,7 @@ This repository documents the setup and configuration of a personal Kubernetes s
 
 ### **Cluster:** Staging
 * **Kubernetes Distribution:** k3s
-* **Version:** v1.34.4+k3s1
+* **Version:** v1.34.6+k3s1
 * **Container Runtime:** containerd
 * **GitOps:** <img src=https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/flux-cd.png height=25 length=25> Flux CD
 
