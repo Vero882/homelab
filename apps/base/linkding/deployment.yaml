@@ -4,6 +4,8 @@ metadata:
   name: linkding
 spec:
   replicas: 1
+  strategy:
+    type: Recreate
   selector:
     matchLabels:
       app: linkding
@@ -24,8 +26,8 @@ spec:
           securityContext:
             allowPrivilegeEscalation: false
           envFrom:
-          - secretRef:
-              name: linkding-container-env
+            - secretRef:
+                name: linkding-container-env
           volumeMounts:
             - name: linkding-data-pvc
               mountPath: /etc/linkding/data
