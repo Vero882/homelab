@@ -3,7 +3,7 @@ This repository documents the setup and configuration of a personal Kubernetes s
 
 ## Kubernetes Cluster Information
 
-### **Cluster:** Staging
+### **Cluster:** Yamazakura
 * **Kubernetes Distribution:** k3s
 * **Version:** v1.34.6+k3s1
 * **Container Runtime:** containerd
