@@ -1,5 +1,5 @@
-# Homelab <img src=https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/proxmox.png height=25 length=25> <img src=https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/kubernetes.png height=25 length=25>
-This repository documents the setup and configuration of a personal Kubernetes staging cluster running within a Proxmox Virtual Environment (VE). 
+# Kubernetes Homelab <img src=https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/kubernetes.png height=25 length=25>
+This repository is the single source of truth for a personal gitops managed Kubernetes cluster running within a Proxmox Virtual Environment (VE). The cluster provides a handful of both internal services, as well as externally accessible services via Cloudflare tunnels.
 
 ## Kubernetes Cluster Information
 
@@ -8,33 +8,6 @@ This repository documents the setup and configuration of a personal Kubernetes s
 * **Version:** v1.35.4+k3s1
 * **Container Runtime:** containerd
 * **GitOps:** <img src=https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/flux-cd.png height=25 length=25> Flux CD
-
-## Hardware
-The homelab is built on the following hardware:
-
-### Compute
-* **san:** Minisforum MS-A1
-    * CPU: AMD Ryzen 7 8700G
-    * RAM: 96GB (2x 48GB) Crucial DDR5 5600MHz
-
-* **spike:** Custom Build
-    * CPU: Intel i7-4790K
-    * RAM: 32GB (2x 16GB) 
-
-* **faye (QDevice):** Dell Optiplex
-    * CPU: Intel i5-4590S
-    * RAM: 8GB
-
-* **jet (Cold Backup/Retired):** Dell PowerEdge R630
-    * CPU: x2 Intel Xeon E5-2683 v4
-    * RAM: 672GB (21x 32GB) DDR3 2133MHz 
-
-### Storage
-* **Synology NAS:** DS920+
-    * CPU: Intel Celeron J4125
-    * RAM: 4GB
-    * Storage:
-        * 32TB (4x 8TB HDD) (SHR; 1 drive tolerance)
 
 ## Applications Deployed
 Here are some of the applications currently running on the homelab:
@@ -74,5 +47,5 @@ Here are some of the applications currently running on the homelab:
 ## Future Improvements
 * [X] **Implement remote storage:** Implement remote storage using [Synology CSI](https://github.com/SynologyOpenSource/synology-csi)/[Synology CSI Talos](https://github.com/zebernst/synology-csi-talos) so pods are not tied to local volumes on nodes. [Talos Doc](https://www.talos.dev/v1.9/kubernetes-guides/configuration/synology-csi/)
 * [ ] **Dashboard migration:** Migrate from [Heimdall](https://heimdall.site/) to [Homepage](https://gethomepage.dev/).
-* [ ] **Kubernetes Distro:** Deploy baremetal production cluster with [Talos Linux](https://www.talos.dev/) for a full, cloud-native-like secured cluster. (Pending hardware purchase)
-* [ ] **Infrastructure as Code:** Start managing as many items as possible with Terraform or Pulumi instead of traditional methods. 
+* [ ] **Kubernetes Distro:** Deploy baremetal cluster with [Talos Linux](https://www.talos.dev/) for a full, cloud-native-like secured cluster. (Pending hardware purchase)
+* [ ] **Infrastructure as Code:** Start managing as many items as possible with Terraform or Pulumi instead of traditional methods.
